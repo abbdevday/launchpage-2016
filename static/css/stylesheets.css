@@ -1,0 +1,413 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500);
+/* line 23, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative; }
+
+/* line 30, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+h2 {
+  font-family: 'Roboto', sans-serif; }
+
+/* line 34, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+a {
+  color: #007dc0; }
+  /* line 36, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  a:hover {
+    color: #75c044;
+    text-decoration: none; }
+
+/* line 42, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+header {
+  padding-top: 21px; }
+  /* line 45, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  header .logo {
+    margin-top: 10px; }
+  @media screen and (max-width: 767px) {
+    /* line 50, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    header .logo {
+      text-align: center;
+      margin-bottom: 35px; } }
+
+/* line 57, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+.socials {
+  height: 86px;
+  margin-top: 26px;
+  text-align: right;
+  position: relative; }
+
+@media screen and (max-width: 767px) {
+  /* line 65, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .socials {
+    text-align: center; }
+    /* line 68, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .socials.phones-screen {
+      height: 50px; }
+      /* line 73, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      .socials.phones-screen ul li:before {
+        content: none !important; }
+  /* line 81, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .phones-screen {
+    display: block; }
+  /* line 85, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .medium-screen {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  /* line 91, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .phones-screen {
+    display: none; }
+  /* line 95, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .medium-screen {
+    display: block; } }
+
+/* line 100, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+.social-media-bckg {
+  background: url("../images/sprite.png");
+  background-position: 0 -186px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 55px;
+  bottom: 10px;
+  height: 70px;
+  width: 240px;
+  z-index: 0; }
+  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+    /* line 100, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .social-media-bckg {
+      /* on retina, use image that's scaled by 2 */
+      background-image: url("../images/sprite@2x.png");
+      background-size: 262px 256px; } }
+
+@media screen and (max-width: 767px) {
+  /* line 114, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .social-media-bckg {
+    left: -65px;
+    right: 0;
+    margin: auto; } }
+
+/* line 121, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+.social-media {
+  position: relative;
+  z-index: 100; }
+  /* line 125, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .social-media li {
+    padding: 0;
+    background-repeat: no-repeat;
+    margin-left: 14px;
+    vertical-align: middle;
+    width: 29px; }
+    /* line 132, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .social-media li:before {
+      content: none; }
+  /* line 137, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .social-media a {
+    display: inline-block; }
+  /* line 141, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .social-media .facebook {
+    background: url("../images/sprite.png") -61px -70px;
+    height: 31px;
+    width: 15px; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      /* line 141, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      .social-media .facebook {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("../images/sprite@2x.png");
+        background-size: 262px 256px; } }
+    /* line 147, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .social-media .facebook:hover {
+      background: url("../images/sprite.png") -61px -106px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* line 147, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        .social-media .facebook:hover {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("../images/sprite@2x.png");
+          background-size: 262px 256px; } }
+  /* line 153, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .social-media .twitter {
+    background: url("../images/sprite.png") -94px -70px;
+    height: 30px;
+    width: 21px; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      /* line 153, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      .social-media .twitter {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("../images/sprite@2x.png");
+        background-size: 262px 256px; } }
+    /* line 159, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .social-media .twitter:hover {
+      background: url("../images/sprite.png") -94px -106px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* line 159, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        .social-media .twitter:hover {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("../images/sprite@2x.png");
+          background-size: 262px 256px; } }
+  /* line 165, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .social-media .google-plus {
+    background: url("../images/sprite.png") -133px -70px;
+    height: 31px;
+    width: 31px; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      /* line 165, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      .social-media .google-plus {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("../images/sprite@2x.png");
+        background-size: 262px 256px; } }
+    /* line 171, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .social-media .google-plus:hover {
+      background: url("../images/sprite.png") -133px -106px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* line 171, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        .social-media .google-plus:hover {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("../images/sprite@2x.png");
+          background-size: 262px 256px; } }
+  /* line 177, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .social-media .youtube {
+    background: url("../images/sprite.png") -182px -70px;
+    height: 22px;
+    width: 32px; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      /* line 177, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      .social-media .youtube {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("../images/sprite@2x.png");
+        background-size: 262px 256px; } }
+    /* line 183, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .social-media .youtube:hover {
+      background: url("../images/sprite.png") -182px -106px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* line 183, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        .social-media .youtube:hover {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("../images/sprite@2x.png");
+          background-size: 262px 256px; } }
+  /* line 189, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .social-media .linkedin {
+    background: url("../images/sprite.png") -232px -70px;
+    height: 30px;
+    width: 30px; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      /* line 189, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      .social-media .linkedin {
+        /* on retina, use image that's scaled by 2 */
+        background-image: url("../images/sprite@2x.png");
+        background-size: 262px 256px; } }
+    /* line 195, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .social-media .linkedin:hover {
+      background: url("../images/sprite.png") -232px -106px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* line 195, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        .social-media .linkedin:hover {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("../images/sprite@2x.png");
+          background-size: 262px 256px; } }
+
+/* line 202, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+.container {
+  height: 124px;
+  position: relative; }
+
+/* line 207, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+#main-content {
+  margin-top: 3%;
+  padding-bottom: 134px; }
+  /* line 211, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  #main-content .container {
+    height: 100%;
+    padding-top: 28px; }
+    /* line 215, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    #main-content .container h2 {
+      color: #007dc0;
+      font-size: 3.5em;
+      font-weight: 300;
+      padding-top: 25px;
+      padding-bottom: 20px;
+      letter-spacing: -1px; }
+    @media screen and (max-width: 1999px) {
+      /* line 225, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      #main-content .container h2 {
+        font-size: 3.3em; } }
+    @media screen and (max-width: 991px) {
+      /* line 231, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      #main-content .container h2 {
+        font-size: 3em; } }
+    /* line 236, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    #main-content .container ul {
+      padding: 0;
+      line-height: 26px; }
+      /* line 240, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      #main-content .container ul li {
+        list-style: none;
+        font-size: 1.1em; }
+        /* line 244, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        #main-content .container ul li:before {
+          color: #007dc0;
+          content: "·";
+          font-size: 2em;
+          vertical-align: middle;
+          line-height: 26px; }
+    /* line 254, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    #main-content .container .description {
+      color: #484848;
+      font-size: 1.7em;
+      font-weight: 300;
+      line-height: 28px; }
+    @media screen and (max-width: 1999px) {
+      /* line 262, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      #main-content .container .description {
+        font-size: 1.5em; } }
+    @media screen and (max-width: 991px) {
+      /* line 268, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      #main-content .container .description {
+        font-size: 1.2em; } }
+    /* line 274, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    #main-content .container .shape img {
+      right: -28%;
+      position: relative;
+      width: 100%; }
+    @media screen and (max-width: 767px) {
+      /* line 281, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      #main-content .container .shape img {
+        display: none; } }
+
+/* line 289, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+.marker {
+  background: url("../images/sprite.png") 0 -70px;
+  height: 49px;
+  margin-right: 8px;
+  width: 29px;
+  vertical-align: middle; }
+  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+    /* line 289, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .marker {
+      /* on retina, use image that's scaled by 2 */
+      background-image: url("../images/sprite@2x.png");
+      background-size: 262px 256px; } }
+
+/* line 298, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+.place-text {
+  font-size: 1.8em;
+  font-weight: 700;
+  padding: 42px 0 54px 0;
+  margin-left: 15px; }
+  @media screen and (max-width: 767px) {
+    /* line 305, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    .place-text.phones-screen {
+      padding: 8px 0 0 0;
+      text-align: center;
+      margin: 0; } }
+
+@media screen and (max-width: 1999px) {
+  /* line 314, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .place-text {
+    font-size: 1.6em; } }
+
+@media screen and (max-width: 991px) {
+  /* line 320, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  .place-text {
+    font-size: 1.3em; } }
+
+/* line 325, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+.inline-element {
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 330, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+footer {
+  border-top: 1px solid #c5c5c5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  /* line 337, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  footer a {
+    color: #484848; }
+  /* line 341, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  footer .container {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 42px 0; }
+    /* line 346, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    footer .container ul {
+      list-styl: none; }
+      /* line 350, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      footer .container ul.list-inline li {
+        padding-left: 20px;
+        margin-left: 15px; }
+        /* line 354, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        footer .container ul.list-inline li:first-child {
+          margin-left: 0; }
+      /* line 359, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      footer .container ul li {
+        background: url(../images/sprite.png) -121px -142px; }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          /* line 359, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+          footer .container ul li {
+            /* on retina, use image that's scaled by 2 */
+            background-image: url("../images/sprite@2x.png");
+            background-size: 262px 256px; } }
+    /* line 365, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    footer .container .mail {
+      background: url(../images/sprite.png) 0 -140px;
+      height: 19px;
+      width: 25px;
+      margin-right: 9px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* line 365, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        footer .container .mail {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("../images/sprite@2x.png");
+          background-size: 262px 256px; } }
+    /* line 373, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    footer .container .abb-logo {
+      background: url(../images/sprite.png) -44px -140px;
+      height: 25px;
+      margin-left: 14px;
+      width: 63px; }
+      @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+        /* line 373, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        footer .container .abb-logo {
+          /* on retina, use image that's scaled by 2 */
+          background-image: url("../images/sprite@2x.png");
+          background-size: 262px 256px; } }
+    @media screen and (max-width: 991px) {
+      /* line 382, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      footer .container .abb-logo {
+        margin-left: 5px; } }
+    /* line 387, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    footer .container > div {
+      text-align: center; }
+      /* line 390, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      footer .container > div:first-child {
+        text-align: left;
+        padding-left: 28px; }
+      /* line 395, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      footer .container > div:last-child {
+        color: #949494;
+        font-weight: 300;
+        text-align: right; }
+    @media screen and (max-width: 991px) {
+      /* line 403, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      footer .container > div {
+        text-align: center !important; }
+        /* line 406, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+        footer .container > div:first-child {
+          padding: 0; } }
+  @media screen and (max-width: 767px) {
+    /* line 414, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+    footer .container {
+      padding: 0px 0; }
+      /* line 417, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+      footer .container > div {
+        margin: 20px 0; } }
+
+@media screen and (max-width: 767px) {
+  /* line 425, C:/Users/E550/projects/devday/static/css/stylesheets.scss */
+  footer {
+    padding-bottom: 15px; } }
+
+/*# sourceMappingURL=stylesheets.css.map */
